@@ -31,5 +31,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "- Base Layout",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dippokey/CULTURA-20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dippokey/CULTURA-20/issues"
+  },
+  "homepage": "https://github.com/Dippokey/CULTURA-20#readme"
 }

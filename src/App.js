@@ -14,7 +14,9 @@ import Contact from "./Contact";
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+        <HashRouter>
+        {/*//countdown, remove
+
       <section class="header">
                 <div class="row">
                    <div class="navbar navbar-default">
@@ -41,19 +43,27 @@ class App extends Component {
                             </div>
                       </div>
                  </div>
-                 <div className="content">
+                <div className="content">
                      <Route exact path="/" component={Home}/>
                      <Route path="/Events" component={Events}/>
                      <Route path="/Contact" component={Contact}/>
                  </div>
-                </div>
-        </section>
-      <div>
+
+                 </div>
+         </section>
+       <div>
 
 
 
-      </div>
-    </HashRouter>
+       </div>
+
+
+
+     //countdown part*/ }
+
+
+</HashRouter>
+
     );
   }
 }
