@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
         <HashRouter>
-        {/*//countdown, remove
+        {//countdown, remove
 
       <section class="header">
                 <div class="row">
@@ -51,15 +51,13 @@ class App extends Component {
 
                  </div>
          </section>
-       <div>
-
-
-
+       /*<div>
        </div>
+*/
 
 
-
-     //countdown part*/ }
+     //countdown part 
+    }
 
 
 </HashRouter>
