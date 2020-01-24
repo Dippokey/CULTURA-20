@@ -179,6 +179,7 @@ header {
   }
 
   .fullscreen-bg__video {
-    display: none;
+    display :none
+    background-color: #000;
   }
 }
