@@ -129,7 +129,7 @@ Primary use:
 .flip-clock-divider::before {
   content: ":";
   font-family: Quantico-Regular;
-  color: #000;
+  color: #fff;
   font-size: 120px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -148,7 +148,7 @@ Primary use:
 
 .flip-clock-divider::after {
   font-family: Montserrat-Bold;
-  color: #000;
+  color: #fff;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -341,7 +341,7 @@ Primary use:
   top: 0;
   left: 0;
   background: #e5e5e5;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 
@@ -368,15 +368,15 @@ Primary use:
 
 /*---------------------------------------------*/
 .how-social {
-  color: #000;
+  color: #fff;
   font-size: 18px;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   background-color: transparent;
   border-radius: 50%;
 }
 
 .how-social:hover {
-  background-color: #000;
+  background-color: #fff;
   color: #0d1629;
 }
 
