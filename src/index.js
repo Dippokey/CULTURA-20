@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Cards_Car from "./Cards_Car/Events"
 import Events from "./Events/Events"
 import * as serviceWorker from './serviceWorker';
 

@@ -5,7 +5,6 @@ import "./Events.css"
 const Card = props =>{
 
     return(
-        
         <div className="card text-center">
             <div className = "overflow">
                 <img src={props.imgsrc} alt="Image1" className="card-img-top"/>
@@ -19,7 +18,7 @@ const Card = props =>{
             </div>
 
         </div>
-        
+
     );
     
 }
