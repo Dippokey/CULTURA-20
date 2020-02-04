@@ -91,7 +91,7 @@ li span {
 .boxed {
   color: white;
   font-size: 110%;
-  margin-top:40%;
+  margin-top:30%;
   margin-bottom: 40%;
   background: #095f8c ;
   padding: 10%;
@@ -110,12 +110,15 @@ ul{
   transform: translate(120%, -500%);
 }
 
+.navbar-default{
+  transition:500ms ease;
+  background:transparent !important;
+}
+.navbar-default.scrolled{
+  background:#343a40!important;
+}
 
 @media (max-width: 767px){
-  .button-loc{
-    transform: translate(120%, -100%);
-  }
-
   .draw{
     padding-top: 60%;
     height: 0px;
@@ -123,11 +126,16 @@ ul{
   }
 
   li {
-    font-size: 80%;
-      padding: 3%;
+    font-size: 100%;
+      padding: 2%;
   }
 
   li span {
     font-size: 100%;
+  }
+
+  .bg-color{
+    transition:500ms ease;
+    background:#343a40!important;
   }
 }

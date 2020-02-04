@@ -11,10 +11,10 @@ class App extends Component {
   render() {
     return (
       <>
-    <Navbar style={{ width: "100%" }} scrolling expand="lg" variant="dark" expand="md" fixed="top" expand="lg">
+    <Navbar className="navbar-default" scrolling bg dark sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Navbar.Brand href="#home"><img alt='' className="logo_size" src={logo}/></Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav">
       <Nav>
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#link">About Us</Nav.Link>
@@ -39,18 +39,18 @@ class App extends Component {
   				</div>
             <div className="col-md-6">
 
-                    <p className="boxed">
-                    <h1>Cultura 2020</h1>
-                      CMR Institute of Technology is in its 12th edition of their annual Techno-Cultural Fest Cultura'20. A most sought after fest in Bangalore, Cultura has grown to greater heights over the years. With a power-packed lineup of 45+ exciting events in store, along with a famous artist on the 2nd day of the fest, Cultura'20 has its own fan base among the college youth of Bangalore. This year, we have added yet another set of scintillating events that are trending among the college students, and are providing them with a huge platform for them to showcase their talent to the audience. Events like DJ Wars, Stand-up Comedy have been new additions to encourage everyone to give their best. With enthralling ideas, new initiatives and a more interactive Cultura'20, we strive to make you witness the best!
-                    <br/><br/>
-                    <h3>Cultura live in:</h3>
-                    <ul>
-                      <li><span id="days"></span>days</li>
-                      <li><span id="hours"></span>Hours</li>
-                      <li><span id="minutes"></span>Minutes</li>
-                      <li><span id="seconds"></span>Seconds</li>
-                    </ul>
-                    </p>
+                    <div className="boxed">
+                      <h1>Cultura 2020</h1>
+                        CMR Institute of Technology is in its 12th edition of their annual Techno-Cultural Fest Cultura'20. A most sought after fest in Bangalore, Cultura has grown to greater heights over the years. With a power-packed lineup of 45+ exciting events in store, along with a famous artist on the 2nd day of the fest, Cultura'20 has its own fan base among the college youth of Bangalore. This year, we have added yet another set of scintillating events that are trending among the college students, and are providing them with a huge platform for them to showcase their talent to the audience. Events like DJ Wars, Stand-up Comedy have been new additions to encourage everyone to give their best. With enthralling ideas, new initiatives and a more interactive Cultura'20, we strive to make you witness the best!
+                      <br/><br/>
+                      <h3>Cultura live in:</h3>
+                      <ul>
+                        <li><span id="days"></span>days</li>
+                        <li><span id="hours"></span>Hours</li>
+                        <li><span id="minutes"></span>Minutes</li>
+                        <li><span id="seconds"></span>Seconds</li>
+                      </ul>
+                    </div>
           </div>
         </div>
 

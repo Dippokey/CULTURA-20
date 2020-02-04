@@ -8,11 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <button id="ReloadButton" type="button" style="visibility: hidden;" onClick="refreshPage"></button>
     <script>
-    function refreshPage(){
-        window.location.reload();
-    }
+    $(window).scroll(function(){
+    	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
     </script>
     <script>
     var init = function(){
@@ -20,11 +19,37 @@
     navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
   var isSmall = window.innerWidth < 1000;
 
-  var ps = new ParticleSlider({
-    ptlGap: isMobile || isSmall ? 3 : 0,
-    ptlSize: isMobile || isSmall ? 3 : 1,
-    width: 1e9,
-    height: 1e9
+  document.addEventListener('DOMContentLoaded', function() { //DOM-ready callback
+      var ps, timeout;
+      handlePS();
+      window.addEventListener('resize', function() {
+          if (timeout) { //check if the timer has been set
+              clearTimeout(timeout); //clear the timer
+          }
+          //set a timer
+          timeout = setTimeout(handlePS, 250);
+      });
+
+      function handlePS() {
+          if (document.body.clientWidth >= 960) {
+              //check if ps is assigned as an instance of the ParticleSlider
+              if (window.ps && typeof ps !== null) {
+                  ps.init(); //refresh the particle slider since it exists
+              } else {
+                  //otherwise create a new instance of the particle slider
+                  ps = new ParticleSlider({
+                    ptlGap: isMobile || isSmall ? 3 : 0,
+                    ptlSize: isMobile || isSmall ? 3 : 1,
+                    width: 1e9,
+                    height: 1e9
+                  });
+              }
+          }
+          else {
+              //when the flat logo is displayed, get rid of the particle slider instance
+              ps = null;
+          }
+      }
   });
 
   var gui = new dat.GUI();
