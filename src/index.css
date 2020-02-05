@@ -1,0 +1,14 @@
+ #about{
+  background-color:  #095f8c;
+  height:50vh ;
+  color: white;
+  opacity: 0.9;
+  margin-bottom: 2em;
+ }
+ #about h1{
+   text-align: center;
+   color: bisque;
+ }
+ #about div{
+   text-align: justify;
+ }
