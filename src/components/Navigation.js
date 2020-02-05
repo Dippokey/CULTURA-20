@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import logo from '../Cultura20Logo3.png';
 import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Navbar, Nav, Button } from 'react-bootstrap';
 
 

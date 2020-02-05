@@ -1,7 +1,7 @@
 import React from 'react';
 import Contact from './components/Contact';
 import Aboutus from './components/Aboutus';
-import Navigation from './components/Navigation';
+
 import Home from './components/Home';
 import Caro from './components/Caro';
 import Slider from './components/eventcaro';
@@ -35,7 +35,7 @@ const slideData = [
 function App() {
   return (<div className="App" >
 
-    <Navigation > </Navigation>
+
     <Home > </Home>
     <Slider heading="Example Slider" slides={slideData} />
     <Caro></Caro>
