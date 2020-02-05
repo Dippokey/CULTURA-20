@@ -48,16 +48,28 @@ class Slide extends React.Component {
     event.target.style.opacity = 1
   }
 
+  getButtonsUsingMap = (hrefObj) => {
+ 
+  return hrefObj.map((it) => {
+    
+      return <a href = {it["refer"]}><button className = "eve_bt " >{it["headl"]}</button></a>
+      }
+)
+  }
+  
+
 
   render() {
-    const { src, button, headline, index } = this.props.slide
+    const { src, button, headline, index, backg, hrefObj} = this.props.slide
     const current = this.props.current
     let classNames = 'slide'
+    
 
     if (current === index) classNames += ' slide--current'
     else if (current - 1 === index) classNames += ' slide--previous'
     else if (current + 1 === index) classNames += ' slide--next'
 
+    console.log(src,button,headline, index)
     return (
 
       <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
@@ -81,7 +93,7 @@ class Slide extends React.Component {
 
               <article className="slide__content">
                 <h2 className="slide__headline">{headline}</h2>
-                <button className="slide__action btn" onClick={this.handleClick} >{button}</button>
+                <button className="slide__action btn" onClick={this.handleClick}>{button}</button>
               </article>
             </li>
           </div>
@@ -99,14 +111,19 @@ class Slide extends React.Component {
                 <img
                   className="slide__image"
                   alt={headline}
-                  src={src}
+                  src={backg}
                   onLoad={this.imageLoaded}
                 />
               </div>
 
               <article className="slide__content">
-                <h2 className="slide__headline">second</h2>
-                <button className="slide__action btn" onClick={this.handleClick} >{button}</button>
+                <h2 className="slide__headline">{headline}</h2>
+                <div className = "row"> 
+                  {
+                    this.getButtonsUsingMap(hrefObj)
+                  } 
+                </div>
+
               </article>
             </li>
           </div>
