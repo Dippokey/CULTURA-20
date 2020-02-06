@@ -16,7 +16,7 @@ class Navigation extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="hello">
               <Nav.Link href="#home"><span className="fields">Home</span></Nav.Link>
-              <Nav.Link href="#link"><span className="fields">Events</span></Nav.Link>
+              <Nav.Link href="#id_event"><span className="fields">Events</span></Nav.Link>
               <Nav.Link href="#link"><span className="fields">Sponsors</span></Nav.Link>
               <Nav.Link href="#link"><span className="fields">About Us</span></Nav.Link>
 

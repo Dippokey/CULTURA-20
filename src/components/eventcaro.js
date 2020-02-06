@@ -91,7 +91,7 @@ class Slide extends React.Component {
 
               <article className="slide__content">
                 <h2 className="slide__headline">{headline}</h2>
-                <button className="slide__action btn" onClick={this.handleClick} >{button}</button>
+                <button className="slide__action btnn" onClick={this.handleClick} >{button}</button>
               </article>
             </li>
           </div>
@@ -199,35 +199,37 @@ class Slider extends React.Component {
     }
 
     return (
-      <div className='slider' aria-labelledby={headingId}>
-        <h1>Events</h1>
-        <ul className="slider__wrapper" style={wrapperTransform}>
-          <h3 id={headingId} class="visuallyhidden">{heading}</h3>
+      <div className='div_slider'>
+        <div className='slider' id="id_events" aria-labelledby={headingId}>
+          <h1>Events</h1>
+          <ul className="slider__wrapper" style={wrapperTransform}>
+            <h3 id={headingId} class="visuallyhidden">{heading}</h3>
 
-          {slides.map(slide => {
-            return (
-              <Slide
-                key={slide.index}
-                slide={slide}
-                current={current}
-                handleSlideClick={this.handleSlideClick}
-              />
-            )
-          })}
-        </ul>
+            {slides.map(slide => {
+              return (
+                <Slide
+                  key={slide.index}
+                  slide={slide}
+                  current={current}
+                  handleSlideClick={this.handleSlideClick}
+                />
+              )
+            })}
+          </ul>
 
-        <div className="slider__controls">
-          <SliderControl
-            type="previous"
-            title="Go to previous slide"
-            handleClick={this.handlePreviousClick}
-          />
+          <div className="slider__controls">
+            <SliderControl
+              type="previous"
+              title="Go to previous slide"
+              handleClick={this.handlePreviousClick}
+            />
 
-          <SliderControl
-            type="next"
-            title="Go to next slide"
-            handleClick={this.handleNextClick}
-          />
+            <SliderControl
+              type="next"
+              title="Go to next slide"
+              handleClick={this.handleNextClick}
+            />
+          </div>
         </div>
       </div>
     )

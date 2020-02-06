@@ -23,6 +23,8 @@ function Contact() {
                 132, ITPL Main Rd, Brookefield, <br></br>
                 Sri Nivasa Reddy Layout, Kundalahalli,<br></br>
                 Bengaluru, Karnataka 560037<br></br>
+                <br></br>
+                For Registration Queries:<br></br>
                 <i className="fa fa-phone fa-lg"></i>: +91 96207 36801<br></br>
                 <i className="fa fa-phone fa-lg"></i>: +91 95387 87268<br></br>
                 <i className="fa fa-envelope fa-lg"></i>:
@@ -35,12 +37,11 @@ function Contact() {
             </div>
             <div className="col-12 col-sm-4 align-self-center">
               <div className="text-center">
-                <a className="btn btn-social-icon btn-google" href="http://google.com/+"><i className="fa fa-google-plus"></i></a>
-                <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>
-                <a className="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>
-                <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>
-                <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube"></i></a>
-                <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+                <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/cmritcultura"><i className="fa fa-instagram"></i></a>
+                <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/culturacmrit"><i className="fa fa-facebook"></i></a>
+                <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/cmritcultura"><i className="fa fa-twitter"></i></a>
+                <a className="btn btn-social-icon btn-google" href="http://youtube.com/Cultura'20"><i className="fa fa-youtube"></i></a>
+
               </div>
             </div>
           </div>

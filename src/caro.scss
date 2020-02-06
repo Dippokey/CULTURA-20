@@ -60,14 +60,14 @@ body {
 // =========================
 
 .icon {
-  fill: var(--color-primary);
+  fill: black;
   width: 100%;
 }
 // =========================
 // Buttons
 // =========================
 
-.btn {
+.btnn {
   background-color: var(--color-primary);
   border: none;
   border-radius: 0.125rem;
@@ -144,6 +144,9 @@ body {
   position: absolute;
   transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
 }
+// .div_slider{
+//   background-color: white;
+// }
 
 
 // =========================
@@ -159,7 +162,7 @@ body {
   height: var(--slide-size);
   justify-content: center;
   margin: 0 var(--slide-margin);
-  opacity: 0.25;
+  opacity: 0.6;
   position: relative;
   text-align: center;
   transition:
