@@ -178,4 +178,13 @@ ul{
    color: white;
    text-align: center;
  }
- 
+
+.div_slider{
+  padding-bottom: 20px !important;
+  background-color: #80808083 !important;
+}
+
+.slider__controls{
+  top: 99% !important;
+  position: relative !important;
+}
