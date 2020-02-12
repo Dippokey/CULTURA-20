@@ -48,7 +48,7 @@ a {
 
 /* artist picture */
 .artist-pic{
-  box-shadow: 0 4px 8px 0 azure;
+  box-shadow: 0 10px 10px 0 rgba(207, 207, 211, 0.2);
   transition: 0.3s;
 }
 .artist-pic:hover{
