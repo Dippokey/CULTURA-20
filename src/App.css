@@ -13,6 +13,8 @@
   width: 50%;
 }
 
+
+
 .logo_size{
   width: 20%;
 }
@@ -36,11 +38,12 @@ a {
 
 /* the artist card */
 .artist-card{
-  margin-top: 10% ;
+  /* margin-top: 5% ; */
   margin-right: 5%;
   margin-left: 5%;
   width: 50%;
   text-align: center;
+  display: inline-block;
 }
 
 /* artist picture */
@@ -64,7 +67,7 @@ a {
   transition: 0.3s;
   text-align: justify;
   display: inline-block;
-  width: 70%;
+  width: 68%;
 }
 .boxed1:hover{
   box-shadow: 0 4px 8px 0 azure;
@@ -81,8 +84,8 @@ ul{
 
 /* get pass button */
 #gt-pass-bt{
-  padding-left: 40%;
-  padding-right: 40%;
+  padding-left: 41%;
+  padding-right: 41%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-shadow: 0 4px 8px 0 azure;
@@ -104,16 +107,14 @@ ul{
   width: 70%;
 }
 
+/* buttons for the events */
+.row{
+  display: inline-block !important;
+}
 
 
 
-
-
-
-
-
-
-
+/* media queries start here */
 
 @media (max-width: 767px) {
   .fields{
@@ -230,8 +231,8 @@ li span {
 
 
 
-.slide__image { background-color: #000000; }
-.slide__image img { opacity: 0.5; }
+/* .slide__image { background-color: #000000; }
+.slide__image img { opacity: 0.5; } */
 
 
 /* event buttons */
@@ -259,7 +260,7 @@ li span {
   border-radius: 0.6em;
   color: #e74c3c;
   cursor: pointer;
-  display: flex;
+  /* display: inline-flex; */
   align-self: center;
   font-size: 1rem;
   font-weight: 400;
@@ -306,6 +307,7 @@ li span {
 }
 #foot{
   padding-top: 2em;
+  
 
 
 }
@@ -324,6 +326,9 @@ ul.slider__wrapper{
 .icon{
   background-color: #fff;
   border-radius: 0 5px 5px 0;
+}
+.icon:hover{
+  box-shadow: 5px 0 5px 0 #8c091a;
 }
 
 /* timer */
