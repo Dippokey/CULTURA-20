@@ -2,7 +2,8 @@ import React from 'react';
 import Contact from './components/Contact';
 import Aboutus from './components/Aboutus';
 import Home from './components/Home';
-import Caro from './components/Caro';
+import Sponsors from './components/sponsors'
+//import Caro from './components/Caro';
 import Slider from './components/eventcaro';
 import img1 from "./Assets/Photography.jpg"
 import img2 from "./Assets/Dance.jpg"
@@ -288,9 +289,9 @@ function App() {
 
 
     <Home > </Home>
-    <Slider heading="Example Slider" slides={slideData} />
-
     <Aboutus > </Aboutus>
+    <Slider heading="Example Slider" slides={slideData} />
+    <Sponsors> </Sponsors>
     <Contact > </Contact>
 
   </div>
